@@ -132,6 +132,19 @@ $bolaFora = [
     "Ao tentar evitar um ataque, tropeçou e caiu, ficando vulnerável a um segundo golpe."
     ];
 
+    $dadoCem = [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+    ];
+
 switch ($dado) {
     case 4:
         $valor = rand(1,4);
@@ -144,6 +157,20 @@ switch ($dado) {
         $valor = rand(1,6);
         echo "O valor foi: " . $valor;
             if ($valor == 6) {
+                echo $elogio[rand(0,60)];
+            }
+        break;
+    case 8:
+        $valor = rand(1,8);
+        echo "O valor foi: " . $valor;
+            if ($valor == 8) {
+                echo $elogio[rand(0,60)];
+            }
+        break;
+    case 10:
+        $valor = rand(1,10);
+        echo "O valor foi: " . $valor;
+            if ($valor == 10) {
                 echo $elogio[rand(0,60)];
             }
         break;
@@ -170,6 +197,13 @@ switch ($dado) {
                 echo " CRÍTICO! JOGUE NOVAMENTE!";
             } elseif ($valor <= 4) {
             echo $bolaFora[rand(0,60)];
+        }
+        break;
+    case 100:
+        $valor = $dadoCem[rand(0,9)];
+        echo "O valor foi: " . $valor . ". ";;
+        if ($valor >= 80) {
+            echo $elogio[rand(0,60)];
         }
         break;
     default:
