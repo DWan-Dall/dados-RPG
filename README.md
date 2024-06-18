@@ -10,6 +10,7 @@ Um aplicativo web divertido para jogar dados de RPG. Faça jogadas com diversos 
  - [Instalação](#instalação)
  - [Como Usar](#como-usar)
  - [Contribuição](#contribuição)
+ - [Imagem do Projeto](#imagem-do-projeto)
 
 ## Descrição
 O *Dados RPG* é uma aplicação web que permite realizar jogadas com diferentes tipos de dados usados em jogos de RPG (Role-Playing Games). É possível adicionar novos dados, editar dados existentes, excluí-los e realizar jogadas combinadas. O projeto foi desenvolvido com o intuito de fornecer uma ferramenta prática e divertida para jogadores de RPG.
@@ -80,3 +81,7 @@ Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou encon
   git push origin minha-nova-funcionalidade
 ```
 5) Abra um pull request no GitHub.
+
+## Imagem do Projeto
+![image](https://github.com/DWan-Dall/dados-RPG/assets/52905333/ec5ee8cc-29c6-43c4-8f16-1ebc7e392dcc)
+
