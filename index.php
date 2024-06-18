@@ -22,8 +22,6 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             transition: transform 0.3s ease-in-out;
-            /* max-width: 100%;
-            height: auto; */
         }
         .dado-img:hover {
             transform: scale(1.05);
@@ -44,30 +42,17 @@
         .modal-body {
             text-align: center;
         }
-        /* .btn-custom {
-            font-size: 18px;
-            margin-bottom: 10px; */
-        /* } */
         .jogadas-container {
             text-align: center;
             background-color: #e9ecef;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
-            /* display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 1.2rem; */
         }
         .jogadas-icon {
-            /* font-size: 24px;
-            margin-right: 10px;
-            color: #007bff; */
             margin-right: 10px;
         }
         .jogadas-label {
-            /* font-size: 18px; */
             font-weight: bold;
         }
         .btn-group-top {
@@ -149,7 +134,7 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script> <!-- Biblioteca para áudio -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
   <script>
         var sound = new Howl({
             src: ['/PROJETOS-DIO/Dados-RPG/Sons/dado-rolando.mp3']
@@ -171,11 +156,6 @@
                     $('#dado-selecionado').text('Dado selecionado: D' + dado);
                     $('#jogar-novamente').toggle(response.message.includes('CRÍTICO!'));
                     $('#myModal').modal('show');
-
-                    // $('#resultado').text(response.message);
-                    // $('#dado-selecionado').text('Dado selecionado: D' + dado);
-                    // $('#jogar-novamente').toggle(response.message.includes('CRÍTICO!'));
-                    // $('#myModal').modal('show');
 
                     // Conta as jogadas
                     var jogadas = parseInt($('#jogadas').text()) + 1;
